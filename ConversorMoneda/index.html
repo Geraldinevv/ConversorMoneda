@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="conversor">
+        <h1>Conversor de moneda</h1>
+        <hr>
+        <div class="input-container">
+            <input type="text" id="montoInput" placeholder="Ingrese un monto">
+        </div>
+        <div class="mostrar resultado">
+            <div id="resultado">
+                <p id="resultadoTexto"></p>
+            </div>
+        </div>
+        <div class="select-container">
+            <select id="select_coin">
+                <option value="">Seleccione una moneda</option>
+            </select>
+        </div>
+        
+        <div id="resultado">
+            <p id="resultadoTexto"></p>
+        </div>
+
+        <hr>
+        <button id="search">Consultar</button>
+        <hr>
+    </div>
+    <hr>
+
+    <div class="chart">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
